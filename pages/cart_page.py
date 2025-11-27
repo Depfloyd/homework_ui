@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 from pages.locators import cart_locators
 
@@ -14,6 +13,6 @@ class CartPage(BasePage):
         empty_cart_message = self.find(cart_locators.EMPTY_CART_MESSAGE)
         assert empty_cart_message.text == text
 
-    def check_payment_bread_crumbs(self, text: str):
+    def check_bread_crumbs(self, text: str):
         payment_bread_crumbs = self.find(cart_locators.PAYMENT_BREAD_CRUMBS)
         assert payment_bread_crumbs.text == text

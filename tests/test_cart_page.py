@@ -16,4 +16,4 @@ def test_empty_cart_message(cart_page):
 @pytest.mark.usefixtures('cart_page')
 def test_payment_bread_crumbs(cart_page):
     cart_page.open_page()
-    cart_page.check_payment_bread_crumbs('Payment')
+    cart_page.check_bread_crumbs('Payment')
