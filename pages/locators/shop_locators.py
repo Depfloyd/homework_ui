@@ -6,4 +6,5 @@ CUSTOMIZABLE_DESK_TITLE = (
     )
 CUSTOMIZABLE_DESK_PRICE = (By.XPATH, '//span[@class="oe_currency_value" and contains(text(), "750.00")]')
 SEARCH_FIELD = (By.XPATH, '(//input[@type="search" and @name="search" and @placeholder="Search..."])[2]')
-CUSTOMIZABLE_DESK_SEARCH_RESULT = (By.XPATH, '//div[@class="o_search_result_item_detail px-3"]')
+SEARCH_BUTTON = (By.XPATH, '(//button[@title="Search"])[2]')
+CUSTOMIZABLE_DESK_SEARCH_RESULT = (By.XPATH, '//a[@class="text-primary text-decoration-none"]')
