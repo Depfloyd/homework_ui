@@ -19,7 +19,6 @@ def driver():
     chrome_driver.quit()
 
 
-
 @pytest.fixture()
 def cart_page(driver):
     return CartPage(driver)
